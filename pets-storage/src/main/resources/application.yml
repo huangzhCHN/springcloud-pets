@@ -1,0 +1,16 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: pets-storage
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver              # mysql驱动包 com.mysql.jdbc.Driver
+      url: jdbc:mysql://10.88.88.187:3160/pets?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: root
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
